@@ -1,4 +1,4 @@
-# 01 Decoupled Image Processing Project
+# Decoupled Image Processing Project
 
 ## [ 01 프로젝트 설명 ]
 프로젝트 명 : 분리된 환경에서의 이미지 라벨링 자동화 프로젝트

@@ -57,8 +57,11 @@
 
 ### 동작 과정
 1. 특정 S3 bucket, Prefix에 Image 업로드
+
 2. S3 event notification을 통해 SNS Topic으로 메시지 publish
+
 3. Topic을 구독중인 SQS가 Subscription Filter policy에 맞게 메시지 소비
+
 4. SQS에 들어간 메시지는 Lambda가 Rekognition API호출하여 Labeling 작업 후, Result Bucket에 업로드.
 
    4-1. SQS에 들어간 메시지가 소비되지 않았을 경우, Dead Letter Queue로 전달
